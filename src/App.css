@@ -297,6 +297,214 @@ h1, h2, h3, h4 {
     .header-description {
         font-size: 1rem;
     }
+
+    .App-header {
+        font-size: calc(8px + 2vmin);
+    }
+
+    .header-content {
+        padding: 0 1rem;
+    }
+
+    .header-main {
+        gap: 1.5rem;
+    }
+
+    .header-intro {
+        gap: 0.5rem;
+    }
+
+    .greeting {
+        font-size: 1.2rem;
+    }
+
+    .name-highlight {
+        font-size: 3.5rem;
+    }
+
+    .header-description {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .featured-list {
+        gap: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+    .scroll-text {
+        font-size: 0.7rem;
+    }
+
+    .about-section, .contact-section, .project-list {
+        padding: 40px 20px;
+        margin: 20px auto;
+    }
+
+    .about-container {
+        padding: 50px 0;
+    }
+
+    .about-content {
+        padding: 0 1rem;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-focus {
+        font-size: 0.9rem;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .project-tech {
+        gap: 0.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        padding: 20px;
+    }
+
+    .skill-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-item {
+        font-size: 0.8rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .contact-link {
+        padding: 8px;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .footer-social {
+        gap: 15px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 0 1rem;
+    }
+
+    .header-cta {
+        gap: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .project-tech {
+        gap: 0.5rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-item {
+        padding: 1.5rem;
+    }
+
+    .expertise-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .expertise-item p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 769px) {
