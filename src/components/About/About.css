@@ -1,0 +1,139 @@
+.about-container {
+    padding: 100px 0;
+    background: rgba(255, 0, 0, 0.02);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-white);
+}
+
+.about-focus {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.education-section,
+.certifications-section {
+    background: rgba(255, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.education-section:hover,
+.certifications-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+}
+
+.education-section h3,
+.certifications-section h3 {
+    color: var(--primary-red);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.education-item,
+.certification-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item h4,
+.certification-item h4 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.year,
+.cert-date {
+    color: var(--primary-red);
+    font-size: 0.9rem;
+}
+
+.expertise-areas {
+    margin-top: 4rem;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.expertise-item {
+    background: rgba(255, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+}
+
+.expertise-item i {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+}
+
+.expertise-item h4 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.expertise-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
+
+    .about-focus {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        padding: 0 1rem;
+    }
+}

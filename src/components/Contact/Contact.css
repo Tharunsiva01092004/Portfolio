@@ -1,0 +1,138 @@
+.contact-section {
+    padding: 60px;
+    margin: 40px auto;
+    border-radius: 20px;
+    max-width: 1000px;
+    color: #ffffff;
+    position: relative;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.1), transparent);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover::before {
+    opacity: 1;
+}
+
+.contact-link i {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: rgba(26, 26, 26, 0.95);
+    color: #ffffff;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-red);
+    outline: none;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+    background: linear-gradient(45deg, var(--primary-red), var(--accent-red));
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+button[type="submit"]:hover::before {
+    left: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 20px;
+        margin: 20px auto;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .contact-link {
+        padding: 8px;
+    }
+}

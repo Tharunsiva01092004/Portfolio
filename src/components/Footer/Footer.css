@@ -1,0 +1,116 @@
+.footer {
+    background: var(--gradient-dark);
+    padding: 40px 0;
+    position: relative;
+    margin-top: 80px;
+    border-top: 1px solid #ff0000;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-red);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: var(--text-white);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary-red), var(--accent-red));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.social-link i {
+    position: relative;
+    z-index: 2;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.social-link:hover::before {
+    opacity: 1;
+}
+
+.footer-info {
+    text-align: center;
+    color: var(--text-gray);
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-copyright {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 15px;
+    }
+
+    .footer-social {
+        gap: 20px;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
+}
