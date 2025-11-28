@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React, showcasing projects, skills, and experience. Features a sleek dark/light mode, smooth animations, and a clean UI.
 
+🔗 **Live Demo:** [https://Tharunsiva01092004.github.io/Portfolio](https://Tharunsiva01092004.github.io/Portfolio)
+
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices.
